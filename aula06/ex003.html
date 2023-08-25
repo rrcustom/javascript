@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20 pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    
+    <script>
+        var n1 = Number(window.prompt('Digite um número.'))
+            /*
+            A conversão (Comando: parse) dos dados para números pode ser feita de 3 maneiras:
+            "Number" - O JS identifica se é um Número Inteiro ou Real;
+            "Numer.parseInt" - O JS força a conversão para Números Inteiros;
+            "Number.parseFloat" - O JS converte para Números Reais (Com casas decimais)
+            */
+        var n2 = Number(window.prompt('Digite outo número.'))
+        var s = n1 + n2
+
+        //Formatando Strings:
+        //window.alert('A soma entre n1 e n2 é igual a s') - Não faz interpolação, ou seja, exibe exatamente o que está escrito entre parenteses.
+        //window.alert('A soma entre ' + n1 + ' com ' + n2 + 'é igual a ' + s) - Usa concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Usa template string. Este recurso deverá estar sempre entre o acento de crase.
+            // (number + number)  para adição
+            //(string + string) para concatenação
+            /*
+            Existem duas maneiras de converter Números para String:
+            s.toString()
+            String(s) -Para conversão direta. Sintaxe mais recente.
+            */
+    </script>
+</body>
+</html>
